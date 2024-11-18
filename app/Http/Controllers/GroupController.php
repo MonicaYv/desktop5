@@ -264,6 +264,6 @@ class GroupController extends Controller
         $group = Group::findOrFail($request->id);
         $group->delete();
 
-        return response()->json(['success' => 'Group deleted successfully.']);
+        return response()->json(['message' => 'Group deleted successfully.']);
     }
 }

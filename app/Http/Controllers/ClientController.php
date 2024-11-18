@@ -184,6 +184,6 @@ class ClientController extends Controller
         $client = Client::findOrFail($request->id);
         $client->delete();
 
-        return response()->json(['success' => 'Client deleted successfully.']);
+        return response()->json(['message' => 'Client deleted successfully.']);
     }
 }
